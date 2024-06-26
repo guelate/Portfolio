@@ -1,17 +1,19 @@
 import Image from 'next/image'
 
-export default function Components() {
+export default function ImageMoving({ src }):string {
+
+    //TODO: component to import image 
     return (
       <div>
-        <Image
-          src="https://github.com/guelate/Portfolio/blob/main/client/public/iconeVsc.png"
+         <Image
+          src={src}
           alt="Description de l'image"
-          width={50} // La largeur souhaitée de l'image
-          height={50} // La hauteur souhaitée de l'image
-          unoptimized // Supprimez cette ligne si vous souhaitez activer l'optimisation
+          width={30} // La largeur souhaitée de l'image
+          height={30} // La hauteur souhaitée de l'image
         />
       </div>
     )
   }
 
-//   src="https://portfoliokillian.vercel.app/icons8-code-studio-visuel-2019-48.png"
+// src="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconeVsc.png"
+
