@@ -1,20 +1,23 @@
+import Image from 'next/image'
 
-import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
-
-export default function ContactForm() {
-  return (
-    
-      <Dialog>
-        <DialogTrigger>Open</DialogTrigger>
-        <DialogContent>
-          <DialogHeader>
-            <DialogTitle>Are you absolutely sure?</DialogTitle>
-            <DialogDescription>
-              This action cannot be undone. This will permanently delete your
-              account and remove your data from our servers.
-            </DialogDescription>
-          </DialogHeader>
-        </DialogContent>
-      </Dialog>
-  );
+interface ImageProps {
+  src:string;
 }
+
+export default function ImageMoving({src}:ImageProps){
+
+    //TODO: component to import image 
+    return (
+      <div>
+         <Image
+          src={src}
+          alt="Description de l'image"
+          width={30} 
+          height={30} 
+        />
+      </div>
+    )
+  }
+
+// src="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconeVsc.png"
+
