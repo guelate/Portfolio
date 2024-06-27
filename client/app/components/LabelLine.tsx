@@ -1,4 +1,4 @@
-import Component from "./component";
+
 import { Button } from "@/components/ui/button";
 
 import {
@@ -36,7 +36,7 @@ export default function LabelLine() {
           <DialogHeader>
             <DialogTitle>Edit profile</DialogTitle>
             <DialogDescription>
-              Make changes to your profile here. Click save when you're done.
+              Make changes to your profile here. Click save when yo done.
             </DialogDescription>
           </DialogHeader>
           <div className="grid gap-4 py-4">
