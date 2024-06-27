@@ -1,9 +1,9 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import HeaderLayout from "./components/HeaderLayout";
+import HeaderLayout from "./components/LayoutHeader";
 
 export const metadata: Metadata = {
-  title: "portfolio",
+  title: "Killian Seyo",
   description: "portfolio website",
 };
 export default function RootLayout({
@@ -19,9 +19,5 @@ export default function RootLayout({
       <main>{children}</main>
     </body>
   </html>
-    // <div>
-    //   <HeaderLayout />
-    //   <main>{children}</main>
-    // </div>
   );
 }
