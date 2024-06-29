@@ -1,7 +1,6 @@
 "use client";
 
 import Description from "./Description";
-import LabelLine from "./LabelLine";
 import ProfilPicture from "./ProfilPicture";
 
 export default function HomeHeader() {

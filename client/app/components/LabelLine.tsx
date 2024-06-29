@@ -16,10 +16,7 @@ export default function LabelLine() {
   //TODO: split component
   return (
     <div className="flex justify-center items-center h-8 w-56 text-center space-x-2">
-      <a
-        href="https://www.linkedin.com/in/killian-seyo/"
-        // className="w-full h-full m-0 p-0"
-      >
+      <a href="https://www.linkedin.com/in/killian-seyo/">
         <Button className="h-full rounded .rounded-lg bg-blue-200 hover:bg-blue-300 text-blue-800 m-0 p-2">
           Linkedin
         </Button>
