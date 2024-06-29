@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 import {
@@ -13,24 +12,24 @@ import {
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
 
-
 export default function LabelLine() {
-
-    // TODO: LINKEDIN + GITHUB SHOULD HAVE SAME SYLE OF GMAIL (SPACEMENT AND ALIGMENT)
-    //TODO: split component
+  //TODO: split component
   return (
-    <div className="border border-black flex align-middle justify-betweenpy-2">
+    <div className="flex justify-center items-center h-8 w-56 text-center space-x-2">
       <a
-        className="border bg-green-500"
         href="https://www.linkedin.com/in/killian-seyo/"
+        // className="w-full h-full m-0 p-0"
       >
-        {" "}
-        <Label>Linkedin</Label>
+        <Button className="h-full rounded .rounded-lg bg-blue-200 hover:bg-blue-300 text-blue-800 m-0 p-2">
+          Linkedin
+        </Button>
       </a>
 
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="border bg-green-400 h-8">Gmail</Button>
+          <Button className="h-full rounded .rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 m-0 p-2">
+            Github
+          </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
           <DialogHeader>
@@ -66,8 +65,10 @@ export default function LabelLine() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      <a className="border bg-red-500" href="https://github.com/guelate">
-        <Label>Github</Label>
+      <a href="https://github.com/guelate">
+        <Button className="h-full rounded .rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 m-0 p-2">
+          Gmail
+        </Button>
       </a>
     </div>
   );
