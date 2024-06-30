@@ -2,10 +2,10 @@ import HomeHeader from "./components/HomeHeader";
 import Introduction from "./components/Introduction";
 
 export default function Home() {
-  return(
+  return (
     <div>
-    <HomeHeader />
-    <Introduction />
+      <HomeHeader />
+      <Introduction/>
     </div>
-  ) 
+  );
 }

@@ -15,7 +15,7 @@ export default function Biography() {
 }, []);
 
 return (
-    <div className="border border-black w-2/4">
+    <div className="w-2/4">
       <h2 className="flex flex-row items-center gap-1 text-shadow shadow-yellow-300 dark:text-shadow-none min-h-8">
         <span
           className="inline-block text-primary-txt motion-safe:animate-wave"

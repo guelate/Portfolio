@@ -6,12 +6,11 @@ interface ImageProps {
 
 export default function ImageMoving({src}:ImageProps){
 
-    //TODO: component to import image 
     return (
       <div>
          <Image
           src={src}
-          alt="Description de l'image"
+          alt="Icon Image"
           width={30} 
           height={30} 
         />
@@ -19,5 +18,4 @@ export default function ImageMoving({src}:ImageProps){
     )
   }
 
-// src="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconeVsc.png"
-
+// "

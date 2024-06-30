@@ -1,5 +1,4 @@
 "use client";
-import { useEffect, useState } from "react";
 import LabelLine from "./LabelLine";
 
 export default function Description() {
