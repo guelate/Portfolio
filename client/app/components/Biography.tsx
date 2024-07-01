@@ -2,34 +2,40 @@
 import { useEffect, useState } from "react";
 
 export default function Biography() {
-  const [text, setText] = useState("Ciao, mondo"); // add more text: Bonjour tout le monde, hello world, Ciao mondo
+  const [text, setText] = useState("Bonjour tout le monde !"); 
 
   useEffect(() => {
-      const interval = setInterval(() => {
-          setText((prevText) =>
-            prevText === "Ciao, mondo" ? "hello world" : "Ciao, mondo"
-        );
+    const interval = setInterval(() => {
+      setText((prevText) => {
+        if (prevText === "Bonjour tout le monde !") {
+          return "hello world !";
+        } else if (prevText === "hello world !") {
+          return "Cia, mondo !";
+        } else {
+          return "Bonjour tout le monde !";
+        }
+      });
     }, 2000);
-    
+
     return () => clearInterval(interval);
-}, []);
+  }, []);
+
+
 
 return (
-    <div className="w-2/4">
-      <h2 className="flex flex-row items-center gap-1 text-shadow shadow-yellow-300 dark:text-shadow-none min-h-8">
-        <span
-          className="inline-block text-primary-txt motion-safe:animate-wave"
+    <div className="w-2/4 text-center">
+      <h2 className="items-center gap-1 shadow-yellow-300 dark:text-shadow-none min-h-8 text-biography">
+        <p
+          className="motion-safe:animate-wave"
           role="img"
-          aria-label="waving hand"
           >
           {text}
           <span className="wave-hand">👋</span>
-        </span>
+        </p>
       </h2>
-    {/* TODO: revoir le text en balise <p> </p> */}
-      <p>
+      <p className="text-biography">
         Passionate web developer with a preference for technologies
-        like NextJS, React, and TypeScript. I enjoy crafting innovative web
+        like NextJS, TypeScript, Taiwlindcss and Shadcn /ui. I enjoy crafting innovative web
         projects and building SaaS applications.
       </p>
     </div>
