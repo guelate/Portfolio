@@ -21,11 +21,16 @@ export default function LabelLine() {
           Linkedin
         </Button>
       </a>
+      <a href="https://github.com/guelate">
+        <Button className="h-full rounded .rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 m-0 p-2">
+          Github
+        </Button>
+      </a>
 
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="h-full rounded .rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 m-0 p-2">
-            Github
+          <Button className="h-full rounded .rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 m-0 p-2">
+            Gmail
           </Button>
         </DialogTrigger>
         <DialogContent className="sm:max-w-[425px]">
@@ -62,11 +67,6 @@ export default function LabelLine() {
           </DialogFooter>
         </DialogContent>
       </Dialog>
-      <a href="https://github.com/guelate">
-        <Button className="h-full rounded .rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 m-0 p-2">
-          Gmail
-        </Button>
-      </a>
     </div>
   );
 }

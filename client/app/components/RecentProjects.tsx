@@ -2,6 +2,7 @@
 import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import { JSX, SVGProps } from "react"
 
 //TODO: REPLACE START WITH SIGN FOR DONE OR WIP 
 export default function RecentProjects() {
@@ -12,7 +13,7 @@ export default function RecentProjects() {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight">My Freelance Mission</h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-[800px]">
             As a freelance web developer, my mission is to create beautiful, functional websites and web applications
-            that help businesses and individuals achieve their online goals. I'm passionate about crafting intuitive
+            that help businesses and individuals achieve their online goals. I&apos;m passionate about crafting intuitive
             user experiences, writing clean and efficient code, and staying up-to-date with the latest web technologies.
           </p>
         </div>
@@ -98,7 +99,7 @@ export default function RecentProjects() {
   )
 }
 
-function StarIcon(props) {
+function StarIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

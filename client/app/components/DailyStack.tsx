@@ -1,5 +1,6 @@
 
 import { Card } from "@/components/ui/card"
+import { JSX, SVGProps } from "react"
 
 export default function DailyStack() {
   return (
@@ -37,7 +38,7 @@ export default function DailyStack() {
   )
 }
 
-function CodepenIcon(props) {
+function CodepenIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -61,7 +62,7 @@ function CodepenIcon(props) {
 }
 
 
-function TypeIcon(props) {
+function TypeIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}
@@ -83,7 +84,7 @@ function TypeIcon(props) {
 }
 
 
-function WindIcon(props) {
+function WindIcon(props: JSX.IntrinsicAttributes & SVGProps<SVGSVGElement>) {
   return (
     <svg
       {...props}

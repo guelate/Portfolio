@@ -3,6 +3,7 @@ import HomeHeader from "./components/HomeHeader";
 import Introduction from "./components/Introduction";
 import RecentProjects from "./components/RecentProjects";
 import VeepeeExperiment from "./components/VeepeeExperiment";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <VeepeeExperiment />
       <RecentProjects /> 
       <DailyStack />
+      <Footer />
     </div>
   );
 }

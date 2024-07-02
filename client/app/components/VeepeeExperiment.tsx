@@ -12,9 +12,9 @@ export default function VeepeeExperiment() {
               My Web Development Experiments
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-              As a web developer, I'm constantly exploring new technologies and
-              techniques to push the boundaries of what's possible on the web.
-              At Veepe, I've had the opportunity to experiment with a wide range
+              As a web developer, I&apos;m constantly exploring new technologies and
+              techniques to push the boundaries of what&apos;s possible on the web.
+              At Veepe, I&apos;ve had the opportunity to experiment with a wide range
               of tools and frameworks, from cutting-edge JavaScript libraries to
               innovative design systems.
             </p>
