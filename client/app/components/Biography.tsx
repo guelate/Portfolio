@@ -2,7 +2,7 @@
 import { useEffect, useState } from "react";
 
 export default function Biography() {
-  const [text, setText] = useState("Bonjour tout le monde !"); 
+  const [text, setText] = useState("Bonjour tout le monde !");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -20,22 +20,17 @@ export default function Biography() {
     return () => clearInterval(interval);
   }, []);
 
-
-
-return (
-    <div className="w-2/4 text-center">
+  return (
+    <div className="w-2/4 mt-4 text-center">
       <h2 className="items-center gap-1 shadow-yellow-300 dark:text-shadow-none min-h-8 text-biography">
-        <p
-          className="motion-safe:animate-wave"
-          role="img"
-          >
+        <p className="motion-safe:animate-wave" role="img">
           {text}
           <span className="wave-hand">👋</span>
         </p>
       </h2>
       <p className="text-biography">
-        Passionate web developer with a preference for technologies
-        like NextJS, TypeScript, Taiwlindcss and Shadcn /ui. I enjoy crafting innovative web
+        Passionate web developer with a preference for technologies like NextJS,
+        TypeScript, Taiwlindcss and Shadcn /ui. I enjoy crafting innovative web
         projects and building SaaS applications.
       </p>
     </div>
