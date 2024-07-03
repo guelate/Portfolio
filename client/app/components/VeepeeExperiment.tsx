@@ -1,6 +1,7 @@
 import IconsSpace1 from "./IconsSpace1";
 import CardVeepeeProject from "./CardVeepeeProject";
 
+// g-blue-200 hover:bg-blue-300 text-blue-800
 export default function VeepeeExperiment() {
   return (
     <div>
@@ -11,10 +12,10 @@ export default function VeepeeExperiment() {
           src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
         />
         <div className="block px-4 py-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4 sm:text-4xl md:text-5xl">
+          <h2 className="text-3xl font-bold tracking-tighter mb-4 sm:text-4xl md:text-5xl text-blue-300 hover:text-blue-400">
             My Veepee experience
           </h2>
-          <p className="leading-relaxed text-lg mx-auto md:max-w-2xl">
+          <p className="leading-relaxed text-lg mx-auto md:max-w-2xl text-gray-600">
             As a web developer, I&apos;m constantly exploring new technologies and
             techniques to push the boundaries of what&apos;s possible on the web. At
             Veepe, I&apos;ve had the opportunity to experiment with a wide range of

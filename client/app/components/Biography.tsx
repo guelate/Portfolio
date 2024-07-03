@@ -23,12 +23,12 @@ export default function Biography() {
   return (
     <div className="w-2/4 mt-4 text-center">
       <h2 className="items-center gap-1 shadow-yellow-300 dark:text-shadow-none min-h-8 text-biography">
-        <p className="motion-safe:animate-wave" role="img">
+        <p className="motion-safe:animate-wave text-2xl md:text-3xl font-bold tracking-tight text-blue-300 hover:text-blue-400" role="img">
           {text}
           <span className="wave-hand">👋</span>
         </p>
       </h2>
-      <p className="text-biography">
+      <p className="text-biography text-gray-600">
         Passionate web developer with a preference for technologies like NextJS,
         TypeScript, Taiwlindcss and Shadcn /ui. I enjoy crafting innovative web
         projects and building SaaS applications.

@@ -10,15 +10,15 @@ export default function RecentProjects() {
     <div className="w-full max-w-6xl mx-auto py-12 md:py-20">
       <div className="space-y-8 md:space-y-12">
         <div className="space-y-4 md:space-y-6">
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight">My Freelance Mission</h1>
-          <p className="text-muted-foreground text-lg md:text-xl max-w-[800px]">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight text-blue-300 hover:text-blue-400">My Freelance Mission</h1>
+          <p className="text-muted-foreground text-lg md:text-xl max-w-[800px] text-gray-600">
             As a freelance web developer, my mission is to create beautiful, functional websites and web applications
             that help businesses and individuals achieve their online goals. I&apos;m passionate about crafting intuitive
             user experiences, writing clean and efficient code, and staying up-to-date with the latest web technologies.
           </p>
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Recent Projects</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-300">Recent Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="bg-muted rounded-lg overflow-hidden">
               <CardHeader>
