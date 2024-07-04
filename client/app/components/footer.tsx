@@ -30,26 +30,19 @@ export default function Footer() {
       <FooterSection2
         title="Some Projects"
         href1="Envoiture"
-        href2="Metro"
+        href2="Métro"
         href3="ScrapperTv"
         children1="Envoiture"
-        children2="Metro"
+        children2="Métro"
         children3="Scrapper Tv"
       />
-      <FooterSection3
-        title="Home"
-        href1="https://www.linkedin.com/in/killian-seyo/"
-        href2="https://www.linkedin.com/in/killian-seyo/"
-        href3="https://github.com/guelate"
-        children1="Linkedin"
-        children2="Gmail"
-        children3="Github"
-      >
+      <FooterSection3 title="Home">
         <Button>
           <Download />
           <p>Download CV</p>
         </Button>
       </FooterSection3>
+
     </footer>
   );
 }

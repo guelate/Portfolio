@@ -1,62 +1,18 @@
-import Link from "next/link";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "./ui/dialog";
-import { Button } from "./ui/button";
-import { Label } from "./ui/label";
-import { Input } from "./ui/input";
 import { Download } from "lucide-react";
 
 interface FooterSectionProps {
   title: string;
-  href1: string;
-  href2: any;
-  href3: string;
-  children1: any;
-  children2: any;
-  children3: any;
+  children: any;
 }
 
-export default function FooterSection2({
-  title,
-  href1,
-  href2,
-  href3,
-  children1,
-  children2,
-  children3,
-}: FooterSectionProps) {
+export default function FooterSection2({ title }: FooterSectionProps) {
   return (
-    <div className="border border-black w-1/4 h-48 text-center py-2">
-      <h4 className="text-lg font-semibold mb-4 inline-block">{title}</h4>
-      <Button>
-    <div className="flex border border-black px-2 py-2 rounded .rounded-lg justify-between w-36 text-center align-middle">
-      <Download />
-      <p>Download CV</p>
+    <div className=" w-1/4 h-48 text-center py-2 flex flex-col gap-10 items-center">
+      <h4 className="text-lg font-semibold mb-4">{title}</h4>
+      <div className="flex w-3/6 border border-gray-400 px-4 py-2 rounded .rounded-lg justify-between items-center text-center align-middle cursor-pointer bg-gray-200 hover:bg-gray-400 hover:-translate-y-2 duration-300">
+        <Download className="text-gray-500" />
+        <p className="text-gray-600">Download CV</p>
+      </div>
     </div>
-  </Button>
-      
-    </div>
-    // <div className="border border-black w-1/4 h-48 text-center">
-
-    /* <h4 className="text-lg font-semibold">{title}</h4>
-            <Link  
-            className="hover:underline hover:underline-offset-4"
-            href={href}
-            prefetch={false}>
-            {children}
-            </Link>
-            <Link  
-            className="hover:underline hover:underline-offset-4"
-            href={href}
-            prefetch={false}>
-            {children}
-            </Link>
-            <Link  
-            className="hover:underline hover:underline-offset-4"
-            href={href}
-            prefetch={false}>
-            {children}
-            </Link> */
-
-    // </div>
   );
 }

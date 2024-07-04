@@ -24,18 +24,18 @@ export default function FooterSection1({
   children3,
 }: FooterSectionProps) {
   return (
-    <div className="border border-black w-1/4 h-48 text-center py-2">
+    <div className="w-1/4 h-48 text-center py-2">
       <h4 className="text-lg font-semibold mb-4 inline-block">{title}</h4>
       <Link
         href={href1}
         prefetch={false}
         className="block hover:underline hover:underline-offset-4 py-1"
       >
-        {children1}
+        <p className="text-gray-600">{children1}</p>
       </Link>
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="hover:underline hover:underline-offset-4">
+          <Button className="hover:underline hover:underline-offset-4 py-1 text-gray-600">
             Gmail
           </Button>
         </DialogTrigger>
@@ -87,7 +87,7 @@ export default function FooterSection1({
         prefetch={false}
         className="block hover:underline hover:underline-offset-4 py-1"
       >
-        {children3}
+        <p className="text-gray-600">{children3}</p>
       </Link>
     </div>
     // <div className="border border-black w-1/4 h-48 text-center">

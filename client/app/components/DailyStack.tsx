@@ -1,5 +1,3 @@
-import { Card } from "@/components/ui/card";
-import { JSX, SVGProps } from "react";
 import SvgCard from "./SvgCard";
 import Postgres from "./iconSvg/Postgres";
 import NextJS from "./iconSvg/NextJS";
@@ -7,12 +5,62 @@ import TypeScript from "./iconSvg/Typescript";
 import Tailwind from "./iconSvg/TaiwlindCss";
 import Prisma from "./iconSvg/Prisma";
 import Shadcn from "./iconSvg/ShadcnSvg";
+import Image from "next/image";
 
 export default function DailyStack() {
   return (
-    <div className="w-full py-12 md:py-24 lg:py-32 bg-muted border border-black">
-      <div className="container px-4 md:px-6">
-        <div className="flex flex-col items-center justify-center space-y-4 text-center">
+    // <div className="md:py-24 lg:py-32 border border-gray-700">
+    //   <div className="px-4 md:px-6 space-y-8">
+    //     <div className="text-center">
+    //       <div className="space-y-2">
+    //         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500">
+    //           Stack I use on a daily ⚡️
+    //         </h2>
+    //       </div>
+    //     </div>
+
+    //     {/* Flex container pour les diviseurs et le bloc central */}
+    //     <div className="flex justify-between items-center mx-auto">
+    //       <div className="border border-black w-2/6 h-auto">evee</div>
+
+    //       <div className="w-2/6 py-12 border rounded bg-gray-50">
+    //         <div className="flex flex-wrap justify-center">
+    //           {/* Assurez-vous que les composants SvgCard et les icônes sont correctement importés */}
+    //           <SvgCard href="https://nextjs.org/" text="NextJS">
+    //             <NextJS />
+    //           </SvgCard>
+    //           <SvgCard href="https://www.typescriptlang.org/" text="Typescript">
+    //             <TypeScript />
+    //           </SvgCard>
+    //           <SvgCard href="https://tailwindcss.com/" text="Tailwind CSS">
+    //             <Tailwind />
+    //           </SvgCard>
+    //           <SvgCard href="https://www.postgresql.org/" text="PostgreSQL">
+    //             <Postgres />
+    //           </SvgCard>
+    //           <SvgCard href="https://www.prisma.io/" text="Prisma">
+    //             <Prisma />
+    //           </SvgCard>
+    //           <SvgCard href="https://ui.shadcn.com/" text="Shadcn/UI">
+    //             <Shadcn />
+    //           </SvgCard>
+    //         </div>
+    //       </div>
+
+    //       <div className="border border-black w-2/6 h-auto">
+    //         <Image
+    //           src={iconNextJS}
+    //           alt="Icon Image"
+    //           width={30}
+    //           height={30}
+    //         />
+    //       </div>
+    //     </div>
+    //   </div>
+    // </div>
+    <div className="md:py-24 lg:py-32">
+      <div className="px-4 md:px-6 space-y-8">
+        <div className="text-center">
           <div className="space-y-2">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500">
               Stack I use on a daily ⚡️
@@ -20,52 +68,31 @@ export default function DailyStack() {
           </div>
         </div>
 
+        <div className="mx-auto w-2/6 py-12 border rounded .rounded-lg bg-gray-50">
+          <div className="flex flex-wrap justify-center">
+            <SvgCard href="https://nextjs.org/" text="NextJS">
+              <NextJS />
+            </SvgCard>
+            <SvgCard href="https://www.typescriptlang.org/" text="Typescript">
+              <TypeScript />
+            </SvgCard>
 
-          <div className="container mx-auto px-4 py-12 border border-black">
-            <div className="flex flex-wrap justify-center">
-              <SvgCard>
-                <NextJS />
-              </SvgCard>
-              <SvgCard>
-                <TypeScript />
-              </SvgCard>
-              <SvgCard>
-                <Tailwind />
-              </SvgCard>
-              <div className="flex justify-center w-full">
-                <SvgCard>
-                  <Postgres />
-                </SvgCard>
-                <SvgCard>
-                  <Prisma />
-                </SvgCard>
-                <SvgCard>
-                  <Shadcn />
-                </SvgCard>
-              </div>
-            </div>
+            <SvgCard href="https://tailwindcss.com/" text="Taiwlind CSS">
+              <Tailwind />
+            </SvgCard>
+            <SvgCard href="https://www.postgresql.org/" text="PostgreSQL">
+              <Postgres />
+            </SvgCard>
+
+            <SvgCard href="https://www.prisma.io/" text="Prisma">
+              <Prisma />
+            </SvgCard>
+
+            <SvgCard href="https://ui.shadcn.com/" text="Shadcn/UI">
+              <Shadcn />
+            </SvgCard>
           </div>
-
-        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-12">
-          <Card className="flex flex-col items-center justify-center space-y-4">
-            <div className="bg-primary rounded-md p-4 flex items-center justify-center">
-              <CodepenIcon className="w-12 h-12 text-primary-foreground" />
-            </div>
-            <h3 className="text-xl font-bold">Next.js</h3>
-          </Card>
-          <Card className="flex flex-col items-center justify-center space-y-4">
-            <div className="bg-primary rounded-md p-4 flex items-center justify-center">
-              <TypeIcon className="w-12 h-12 text-primary-foreground" />
-            </div>
-            <h3 className="text-xl font-bold">TypeScript</h3>
-          </Card>
-          <Card className="flex flex-col items-center justify-center space-y-4">
-            <div className="bg-primary rounded-md p-4 flex items-center justify-center">
-              <WindIcon className="w-12 h-12 text-primary-foreground" />
-            </div>
-            <h3 className="text-xl font-bold">Tailwind CSS</h3>
-          </Card>
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -20,7 +20,7 @@ export default function RecentProjects() {
         <div>
           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-300 hover:text-blue-400">Recent Projects</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-muted rounded-lg overflow-hidden">
+            <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
               <CardHeader>
                 <Image
                   src="/placeholder.svg"
@@ -44,7 +44,7 @@ export default function RecentProjects() {
                 </div>
               </CardFooter>
             </Card>
-            <Card className="bg-muted rounded-lg overflow-hidden">
+            <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
               <CardHeader>
                 <Image
                   src="/placeholder.svg"
@@ -68,7 +68,7 @@ export default function RecentProjects() {
                 </div>
               </CardFooter>
             </Card>
-            <Card className="bg-muted rounded-lg overflow-hidden">
+            <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
               <CardHeader>
                 <Image
                   src="/placeholder.svg"

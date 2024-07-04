@@ -15,7 +15,7 @@ export default function CardVeepeeProject({
   description,
 }: CardVeepeeProjectProps) {
   return (
-    <a className="block rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2">
+    <a className="block rounded-lg shadow-lg overflow-hidden transition-transform duration-300 ease-in-out hover:shadow-xl hover:-translate-y-2 cursor-pointer">
       <Image
         src={src}
         width={500}
