@@ -5,11 +5,11 @@ export default function HomeButton() {
   return (
     <Link
       href="#"
-      className="flex items-center px-2 border rounded .rounded-lg text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 bg-black"
+      className="flex items-center px-2 border rounded .rounded-lg text-sm font-medium bg-gray-200 hover:bg-gray-300 text-gray-800 border-gray-300 hover:-translate-y-1 duration-300"
       prefetch={false}
     >
-      <HomeIcon className="mr-2 h-4 w-4 text-white" />
-      <p className="text-white">Home</p>
+      <HomeIcon className="mr-2 h-4 w-4" />
+      <p className="">Home</p>
     </Link>
   );
 }

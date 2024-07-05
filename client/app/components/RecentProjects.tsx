@@ -3,7 +3,10 @@ import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { JSX, SVGProps } from "react"
-
+import CardVeepeeProject from "./CardVeepeeProject"
+import SionService from "../../public/SionService.png"
+import Metro from "../../public/Metro.png"
+import EnvoitureE from "../../public/EnvoitureE.png"
 //TODO: REPLACE START WITH SIGN FOR DONE OR WIP 
 export default function RecentProjects() {
   return (
@@ -18,9 +21,31 @@ export default function RecentProjects() {
           </p>
         </div>
         <div>
-          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-300 hover:text-blue-400">Recent Projects</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-300 hover:text-blue-400">Recent Projects// TODO: complete both component with button: complete or WIP and add also button more for look readmee + make description also</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
+
+          <CardVeepeeProject
+          href="/moderation"
+          src={SionService}
+          alt="Project 3"
+          title="UpList"
+          description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
+        />
+          <CardVeepeeProject
+          href="/moderation"
+          src={Metro}
+          alt="Project 3"
+          title="UpList"
+          description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
+        />
+          <CardVeepeeProject
+          href="/moderation"
+          src={EnvoitureE}
+          alt="Project 3"
+          title="UpList"
+          description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
+        />
+            {/* <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
               <CardHeader>
                 <Image
                   src="/placeholder.svg"
@@ -43,8 +68,9 @@ export default function RecentProjects() {
                   <span className="text-sm text-muted-foreground">4.8</span>
                 </div>
               </CardFooter>
-            </Card>
-            <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
+            </Card> */}
+
+            {/* <Card className="bg-muted rounded-lg overflow-hidden cursor-pointer ">
               <CardHeader>
                 <Image
                   src="/placeholder.svg"
@@ -91,7 +117,7 @@ export default function RecentProjects() {
                   <span className="text-sm text-muted-foreground">4.9</span>
                 </div>
               </CardFooter>
-            </Card>
+            </Card> */}
           </div>
         </div>
       </div>

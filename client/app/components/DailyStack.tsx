@@ -9,60 +9,13 @@ import Image from "next/image";
 
 export default function DailyStack() {
   return (
-    // <div className="md:py-24 lg:py-32 border border-gray-700">
-    //   <div className="px-4 md:px-6 space-y-8">
-    //     <div className="text-center">
-    //       <div className="space-y-2">
-    //         <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500">
-    //           Stack I use on a daily ⚡️
-    //         </h2>
-    //       </div>
-    //     </div>
-
-    //     {/* Flex container pour les diviseurs et le bloc central */}
-    //     <div className="flex justify-between items-center mx-auto">
-    //       <div className="border border-black w-2/6 h-auto">evee</div>
-
-    //       <div className="w-2/6 py-12 border rounded bg-gray-50">
-    //         <div className="flex flex-wrap justify-center">
-    //           {/* Assurez-vous que les composants SvgCard et les icônes sont correctement importés */}
-    //           <SvgCard href="https://nextjs.org/" text="NextJS">
-    //             <NextJS />
-    //           </SvgCard>
-    //           <SvgCard href="https://www.typescriptlang.org/" text="Typescript">
-    //             <TypeScript />
-    //           </SvgCard>
-    //           <SvgCard href="https://tailwindcss.com/" text="Tailwind CSS">
-    //             <Tailwind />
-    //           </SvgCard>
-    //           <SvgCard href="https://www.postgresql.org/" text="PostgreSQL">
-    //             <Postgres />
-    //           </SvgCard>
-    //           <SvgCard href="https://www.prisma.io/" text="Prisma">
-    //             <Prisma />
-    //           </SvgCard>
-    //           <SvgCard href="https://ui.shadcn.com/" text="Shadcn/UI">
-    //             <Shadcn />
-    //           </SvgCard>
-    //         </div>
-    //       </div>
-
-    //       <div className="border border-black w-2/6 h-auto">
-    //         <Image
-    //           src={iconNextJS}
-    //           alt="Icon Image"
-    //           width={30}
-    //           height={30}
-    //         />
-    //       </div>
-    //     </div>
-    //   </div>
-    // </div>
     <div className="md:py-24 lg:py-32">
-      <div className="px-4 md:px-6 space-y-8">
+
+
+      <div className="px-4 md:px-6 space-y-8 justify-center items-center text-center">
         <div className="text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500 text-center">
               Stack I use on a daily ⚡️
             </h2>
           </div>

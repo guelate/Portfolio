@@ -32,7 +32,7 @@ export default function Component() {
           <div className="py-1" role="none">
             <Link
               href="#"
-              className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-muted-foreground"
+              className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
               role="menuitem"
               tabIndex={-1}
               id="menu-item-0"
@@ -43,7 +43,7 @@ export default function Component() {
             </Link>
             <Link
               href="#"
-              className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-muted-foreground"
+              className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
               role="menuitem"
               tabIndex={-1}
               id="menu-item-1"
@@ -54,7 +54,7 @@ export default function Component() {
             </Link>
             <Link
               href="#"
-              className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-muted-foreground"
+              className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
               role="menuitem"
               tabIndex={-1}
               id="menu-item-2"
@@ -65,7 +65,7 @@ export default function Component() {
             </Link>
             <Link
               href="#"
-              className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-muted-foreground"
+              className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
               role="menuitem"
               tabIndex={-1}
               id="menu-item-3"
@@ -74,7 +74,7 @@ export default function Component() {
             >
               Current Stack
             </Link>
-            <div className="block px-4 py-2 text-sm text-muted-foreground hover:bg-muted hover:text-muted-foreground">
+            <div className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200">
                 <p>CV</p>
             </div>
           </div>

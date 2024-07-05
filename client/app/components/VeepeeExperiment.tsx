@@ -1,7 +1,9 @@
 import IconsSpace1 from "./IconsSpace1";
 import CardVeepeeProject from "./CardVeepeeProject";
+import Moderation from "../../public/Moderation.jpg";
+import VeepeeFinder from "../../public/VeepeeFinder.jpg";
+import UpList from "../../public/Uplist.png";
 
-// g-blue-200 hover:bg-blue-300 text-blue-800
 export default function VeepeeExperiment() {
   return (
     <div>
@@ -16,11 +18,11 @@ export default function VeepeeExperiment() {
             My Veepee experience
           </h2>
           <p className="leading-relaxed text-lg mx-auto md:max-w-2xl text-gray-600">
-            As a web developer, I&apos;m constantly exploring new technologies and
-            techniques to push the boundaries of what&apos;s possible on the web. At
-            Veepe, I&apos;ve had the opportunity to experiment with a wide range of
-            tools and frameworks, from cutting-edge JavaScript libraries to
-            innovative design systems.
+            As a web developer, I&apos;m constantly exploring new technologies
+            and techniques to push the boundaries of what&apos;s possible on the
+            web. At Veepe, I&apos;ve had the opportunity to experiment with a
+            wide range of tools and frameworks, from cutting-edge JavaScript
+            libraries to innovative design systems.
           </p>
         </div>
         <IconsSpace1
@@ -30,27 +32,27 @@ export default function VeepeeExperiment() {
         />
       </div>
 
-      <div className="flex flex-wrap justify-center gap-8 px-4 py-8 pb-8 mt-10">
+      <div className="space-y-6 w-2/4 mx-auto mt-20">
         <CardVeepeeProject
-          href="#"
-          src="/placeholder.svg"
+          href="/moderation"
+          src={Moderation}
           alt="Project 1"
-          title="Project 1"
-          description="Explore my latest web development experiment."
+          title="Moderation"
+          description="This project provides an automated solution for moderating sales content."
         />
         <CardVeepeeProject
-          href="#"
-          src="/placeholder.svg"
+          href="/moderation"
+          src={VeepeeFinder}
           alt="Project 2"
-          title="Project 2"
-          description="Explore my latest web development experiment."
+          title="VeepeeFinder"
+          description="This web extension that recommends you products while you browse certain e-commerce websites."
         />
         <CardVeepeeProject
-          href="#"
-          src="/placeholder.svg"
+          href="/moderation"
+          src={UpList}
           alt="Project 3"
-          title="Project 3"
-          description="Explore my latest web development experiment."
+          title="UpList"
+          description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
         />
       </div>
     </div>
