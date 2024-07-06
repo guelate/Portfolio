@@ -2,15 +2,13 @@ import Image from "next/image";
 
 interface ImageProps {
   src: string;
-  translateX: string;
+  translate: string;
 }
 
-export default function ImageMoving({ src, translateX }: ImageProps) {
+export default function ImageMoving({ src, translate }: ImageProps) {
   return (
-    <div className={`border border-black w-8 ${translateX}`}>
-      <Image src={src} alt="Icon Image" width={30} height={30} />
+    <div className={`w-8 abosule ${translate} `}>
+      <Image src={src} alt="Icon Image" width={50} height={50} />
     </div>
   );
 }
-
-// "

@@ -20,26 +20,105 @@
   }
 }
 
-@keyframes move {
+@keyframes moveX1 {
   0% {
-    transform: translateX(0);
+    transform: translate(1180px);
+  }
+
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(1180px);
+  }
+}
+
+@keyframes moveX2 {
+  0% {
+    transform: translate(50px);
+  }
+
+  50% {
+    transform: translateX(1180px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
+}
+
+
+
+
+@keyframes moveX3 {
+  0% {
+    transform: translateX(-0);
   }
   25% {
-    transform: translateX(10px);
+    transform: translateX(-10px);
   }
-  50%{
-    transform: translateX(20px);
+  50% {
+    transform: translateX(-20px);
   }
   75% {
-    transform: translateX(10px);
+    transform: translateX(-10px);
   }
   100% {
     transform: translateX(0);
   }
 }
 
-.icon-move {
-  animation: move 2s infinite;
+@keyframes moveY1 {
+  0% {
+    transform: translateY(-0);
+  }
+  25% {
+    transform: translateY(-10px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  75% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveY2 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(10px);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  75% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.icon-move1 {
+  animation: moveX1 20s infinite;
+}
+.icon-move2 {
+  animation: moveX2 20s infinite;
+}
+
+.icon-move3 {
+  animation: moveX3 2s infinite;
+}
+.icon-move4 {
+  animation: moveY1 2s infinite;
+}
+
+.icon-move5 {
+  animation: moveY2 2s infinite;
 }
 
 .wave-hand {
@@ -50,10 +129,9 @@
 }
 
 .text-header {
-  font-size:large;
+  font-size: large;
 }
-.text-biography{
+.text-biography {
   font-family: "sans-serif", sans-serif;
   font-size: larger;
-
 }

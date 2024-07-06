@@ -36,13 +36,31 @@ export default function Footer() {
         children2="Métro"
         children3="Scrapper Tv"
       />
-      <FooterSection3 title="Home">
-        <Button>
-          <Download />
-          <p>Download CV</p>
-        </Button>
-      </FooterSection3>
+      {/* <FooterSection3 title="Home">
+        <form method="get" action="file.pages">
+          <Button>
+            <Download />
+            <p>Download CV</p>
+          </Button>
+        </form>
+      </FooterSection3> */}
 
+      <FooterSection3 title="Home">
+        <form method="get" action="/file.doc">
+          {" "}
+          {/* Assurez-vous que le chemin commence par "/" si le fichier est dans le dossier 'public' */}
+          <button type="submit" className="...">
+            <Download /> {/* Suppose que c'est votre composant ou icône SVG */}
+            <p>Download CV</p>
+          </button>
+        </form>
+      </FooterSection3>
     </footer>
   );
+}
+
+{
+  /* <form method="get" action="file.doc">
+   <button type="submit">Download!</button>
+</form> */
 }
