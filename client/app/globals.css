@@ -46,79 +46,115 @@
   }
 }
 
+@keyframes moveY1 {
+  0% {
+    transform: translate(270px, 50px);
+   
+  }
 
+  50% {
+    transform: translate(270px, -10px);
+  }
+
+  100% {
+    transform: translate(270px,50px);
+  }
+}
+
+
+@keyframes moveY2 {
+  0% {
+    transform: translate(40px,-10px);
+  }
+  50% {
+    transform: translate(40px,50px);
+  }
+  100% {
+    transform: translate(40px,-10px);
+  }
+}
+
+@keyframes moveY3 {
+  0% {
+    transform: translate(40px,50px);
+  }
+  50% {
+    transform: translate(40px,-10px);
+  }
+  100% {
+    transform: translate(40px,50px);
+  }
+}
+
+@keyframes moveY4 {
+  0% {
+    transform: translate(270px,-10px);
+  }
+  50% {
+    transform: translate(270px,50px);
+  }
+  100% {
+    transform: translate(270px,-10px);
+  }
+}
 
 
 @keyframes moveX3 {
   0% {
-    transform: translateX(-0);
+    transform: translate(270px,30px);
   }
-  25% {
-    transform: translateX(-10px);
-  }
+
   50% {
-    transform: translateX(-20px);
+    transform: translate(40px,30px);
   }
-  75% {
-    transform: translateX(-10px);
-  }
+
   100% {
-    transform: translateX(0);
+    transform: translate(270px,30px);
   }
 }
 
-@keyframes moveY1 {
+
+@keyframes moveX4 {
   0% {
-    transform: translateY(-0);
+    transform: translate(40px,90px);
   }
-  25% {
-    transform: translateY(-10px);
-  }
+
   50% {
-    transform: translateY(-20px);
+    transform: translate(270px,90px);
   }
-  75% {
-    transform: translateY(-10px);
-  }
+
   100% {
-    transform: translateY(0);
+    transform: translate(40px,90px);
   }
 }
 
-@keyframes moveY2 {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(10px);
-  }
-  50% {
-    transform: translateY(20px);
-  }
-  75% {
-    transform: translateY(10px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-.icon-move1 {
+.icon-moveX1 {
   animation: moveX1 20s infinite;
 }
-.icon-move2 {
+.icon-moveX2 {
   animation: moveX2 20s infinite;
 }
 
-.icon-move3 {
-  animation: moveX3 2s infinite;
+.icon-moveX3 {
+  animation: moveX3 20s infinite;
 }
-.icon-move4 {
-  animation: moveY1 2s infinite;
+.icon-moveX4 {
+  animation: moveX4 20s infinite;
 }
 
-.icon-move5 {
-  animation: moveY2 2s infinite;
+.icon-moveY1 {
+  animation: moveY1 5s infinite;
+}
+.icon-moveY2 {
+  animation: moveY2 5s infinite;
+}
+
+.icon-moveY3 {
+  animation: moveY3 5s infinite;
+}
+
+.icon-moveY4 {
+  animation: moveY4 5s infinite;
 }
 
 .wave-hand {

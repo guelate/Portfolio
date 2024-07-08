@@ -7,9 +7,9 @@ interface IconsSpaceProps1 {
 }
 export default function IconsSpace3({ src1, src2 }: IconsSpaceProps1) {
   return (
-    <div className="w-1/4 px-4 border border-black">
-      <ImageMoving src={src1} translate="icon-moveY1" />
-      <ImageMoving src={src2} translate="icon-moveY2" />
+    <div className="w-1/4 px-4">
+      <ImageMoving src={src1} translate="icon-moveY3" />
+      <ImageMoving src={src2} translate="icon-moveY4" />
     </div>
   );
 }

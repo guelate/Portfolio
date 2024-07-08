@@ -1,18 +1,18 @@
-import IconsSpace1 from "./IconsSpace1";
 import CardVeepeeProject from "./CardVeepeeProject";
 import Moderation from "../../public/Moderation.jpg";
 import VeepeeFinder from "../../public/VeepeeFinder.jpg";
 import UpList from "../../public/Uplist.png";
+import IconsSpace4 from "./IconSpace4";
 
 export default function VeepeeExperiment() {
   return (
     <div>
       <div className="flex justify-center mt-20">
-        {/* <IconsSpace1
-          src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconDocker.png"
-          src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconTypescript.png"
-          src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
-        /> */}
+        <IconsSpace4
+          src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconK8s.png"
+          src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconPrisma.png"
+          // src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
+        />
         <div className="block px-4 py-4 text-center">
           <h2 className="text-3xl font-bold tracking-tighter mb-4 sm:text-4xl md:text-5xl text-blue-300 hover:text-blue-400">
             My Veepee experience
@@ -25,11 +25,11 @@ export default function VeepeeExperiment() {
             libraries to innovative design systems.
           </p>
         </div>
-        {/* <IconsSpace1
-          src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconDocker.png"
-          src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconTypescript.png"
-          src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
-        /> */}
+        <IconsSpace4
+          src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
+          src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconNextJS.png"
+          // src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
+        />
       </div>
 
       <div className="space-y-6 w-2/4 mx-auto mt-20">
