@@ -26,7 +26,7 @@ export default function VeepeeExperiment() {
           </p>
         </div>
         <IconsSpace4
-          src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
+          src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconDB.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconNextJS.png"
           // src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
         />
