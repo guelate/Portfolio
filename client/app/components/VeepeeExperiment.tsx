@@ -1,7 +1,7 @@
 import CardVeepeeProject from "./CardVeepeeProject";
 import Moderation from "../../public/Moderation.jpg";
 import VeepeeFinder from "../../public/VeepeeFinder.jpg";
-import UpList from "../../public/Uplist.png";
+import UpList from "../../public/UpList.png";
 import IconsSpace4 from "./IconSpace4";
 
 export default function VeepeeExperiment() {
