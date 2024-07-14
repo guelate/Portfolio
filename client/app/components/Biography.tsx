@@ -28,7 +28,7 @@ export default function Biography() {
           <span className="wave-hand">👋</span>
         </p>
       </h2>
-      <p className="text-biography text-gray-600">
+      <p  className="text-biography text-gray-600">
         Passionate web developer with a preference for technologies like NextJS,
         TypeScript, Taiwlindcss and Shadcn /ui. I enjoy crafting innovative web
         projects and building SaaS applications.

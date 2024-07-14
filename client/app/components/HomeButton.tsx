@@ -4,12 +4,11 @@ import { JSX, SVGProps } from "react";
 export default function HomeButton() {
   return (
     <Link
-      href="#"
+      href="#Home"
       className="flex items-center px-2 border rounded .rounded-lg text-sm font-medium bg-gray-200 hover:bg-gray-300 text-gray-800 border-gray-300 hover:-translate-y-1 duration-300"
-      prefetch={false}
     >
       <HomeIcon className="mr-2 h-4 w-4" />
-      <p className="">Home</p>
+      <p id="Home" className="">Home</p>
     </Link>
   );
 }

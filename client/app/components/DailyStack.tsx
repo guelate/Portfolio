@@ -15,7 +15,7 @@ export default function DailyStack() {
       <div className="px-4 md:px-6 space-y-8 justify-center items-center text-center">
         <div className="text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500 text-center">
+            <h2 id="CurrentStack" className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500 text-center">
               Stack I use on a daily ⚡️
             </h2>
           </div>

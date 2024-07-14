@@ -24,14 +24,12 @@ export default function FooterSection2({
       <h4 className="text-lg font-semibold mb-4 inline-block">{title}</h4>
       <Link
         href={href1}
-        prefetch={false}
         className="block hover:underline hover:underline-offset-4 py-1"
       >
         <p className="text-gray-600">{children1}</p>
       </Link>
       <Link
         href={href2}
-        prefetch={false}
         className="block hover:underline hover:underline-offset-4 py-1"
       >
         <p className="text-gray-600">{children2}</p>
@@ -39,7 +37,6 @@ export default function FooterSection2({
 
       <Link
         href={href3}
-        prefetch={false}
         className="block hover:underline hover:underline-offset-4 py-1"
       >
         <p className="text-gray-600">{children3}</p>

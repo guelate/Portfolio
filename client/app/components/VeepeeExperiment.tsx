@@ -11,10 +11,12 @@ export default function VeepeeExperiment() {
         <IconsSpace4
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconK8s.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconPrisma.png"
-          // src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
         />
         <div className="block px-4 py-4 text-center">
-          <h2 className="text-3xl font-bold tracking-tighter mb-4 sm:text-4xl md:text-5xl text-blue-300 hover:text-blue-400">
+          <h2
+            id="MyVeepeeExperience"
+            className="text-3xl font-bold tracking-tighter mb-4 sm:text-4xl md:text-5xl text-blue-300 hover:text-blue-400"
+          >
             My Veepee experience
           </h2>
           <p className="leading-relaxed text-lg mx-auto md:max-w-2xl text-gray-600">
@@ -28,27 +30,29 @@ export default function VeepeeExperiment() {
         <IconsSpace4
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconNodeJS.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconNextJS.png"
-          // src3="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
         />
       </div>
 
       <div className="space-y-6 w-2/4 mx-auto mt-20">
         <CardVeepeeProject
-          href="/moderation"
+          id="Moderation"
+          href=""
           src={Moderation}
           alt="Project 1"
           title="Moderation"
           description="This project provides an automated solution for moderating sales content."
         />
         <CardVeepeeProject
-          href="/moderation"
+        id="VeepeeFinder"
+          href="/"
           src={VeepeeFinder}
           alt="Project 2"
           title="VeepeeFinder"
           description="This web extension that recommends you products while you browse certain e-commerce websites."
         />
         <CardVeepeeProject
-          href="/moderation"
+          id="UpList"
+          href=""
           src={UpList}
           alt="Project 3"
           title="UpList"

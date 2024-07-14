@@ -2,10 +2,11 @@
 
 import { JSX, SVGProps, useState } from "react";
 import Link from "next/link";
+import { Plus } from "lucide-react";
 
-//TODO: change icon when I clique on Menu button 
-export default function Component() {
+export default function Menu() {
   const [isOpen, setIsOpen] = useState(false);
+
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
@@ -18,8 +19,11 @@ export default function Component() {
         className="p-2 rounded-md hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         onClick={toggleMenu}
       >
-        <MenuIcon className="h-6 w-6" />
-        <span className="sr-only">Toggle menu</span>
+        {isOpen ? (
+          <Plus className="rotate-45" />
+        ) : (
+          <MenuIcon className="h-6 w-6" />
+        )}
       </button>
       {isOpen && (
         <div
@@ -27,55 +31,36 @@ export default function Component() {
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"
-          tabIndex={-1}
         >
           <div className="py-1" role="none">
             <Link
-              href="#"
+              href="#Home"
               className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
-              role="menuitem"
-              tabIndex={-1}
-              id="menu-item-0"
-              onClick={closeMenu}
-              prefetch={false}
             >
               Home
             </Link>
             <Link
-              href="#"
+              href="#MyVeepeeExperience"
               className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
               role="menuitem"
-              tabIndex={-1}
-              id="menu-item-1"
-              onClick={closeMenu}
-              prefetch={false}
             >
               My Veepee experience
             </Link>
             <Link
-              href="#"
+              href="#SomeProject"
               className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
               role="menuitem"
-              tabIndex={-1}
-              id="menu-item-2"
-              onClick={closeMenu}
-              prefetch={false}
             >
               Some projects
             </Link>
             <Link
-              href="#"
+              href="#CurrentStack"
               className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200"
-              role="menuitem"
-              tabIndex={-1}
-              id="menu-item-3"
-              onClick={closeMenu}
-              prefetch={false}
             >
               Current Stack
             </Link>
             <div className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200">
-                <p>CV</p>
+              <p>CV</p>
             </div>
           </div>
         </div>
