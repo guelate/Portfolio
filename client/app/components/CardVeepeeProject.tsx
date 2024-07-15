@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Card } from "./ui/card";
+import { Badge } from "./ui/badge";
 
 interface CardVeepeeProjectProps {
   id: string;
@@ -17,16 +18,51 @@ export default function CardVeepeeProject({
   description,
 }: CardVeepeeProjectProps) {
   return (
-    <Card id={id} className="border rounded .rounded-lg border-gray-300 bg-gray-100 hover:-translate-y-2 duration-300">
+    <Card id={id} className="border rounded-lg border-gray-300 bg-gray-100">
+      
       <div className="flex items-center gap-5">
         <a href={href} className="flex items-start gap-5">
           <Image src={src} alt="Icon Image" width={80} height={80} />
           <div className="flex flex-col mt-1">
             <h3 className="text-xl font-semibold">{title}</h3>
-            <p className=" text-gray-500">{description}</p>
+            <p className="text-gray-500">{description}</p>
           </div>
         </a>
+
+        <div className="group border border-black">
+          <Badge
+            variant="secondary"
+            className="border border-blue-50 bg-blue-100 hover:bg-blue-200 hover:border-blue-300"
+          >
+            Details
+          </Badge>
+          <p className="hidden group-hover:block text-gray-900">ckmwcm</p>
+        </div>
       </div>
     </Card>
   );
 }
+
+
+// <Card id={id} className="border rounded-lg border-gray-300 bg-gray-100">
+      
+// <div className="flex items-center gap-5">
+//   <a href={href} className="flex items-start gap-5">
+//     <Image src={src} alt="Icon Image" width={80} height={80} />
+//     <div className="flex flex-col mt-1">
+//       <h3 className="text-xl font-semibold">{title}</h3>
+//       <p className="text-gray-500">{description}</p>
+//     </div>
+//   </a>
+
+//   <div className="group border border-black">
+//     <Badge
+//       variant="secondary"
+//       className="border border-blue-50 bg-blue-100 hover:bg-blue-200 hover:border-blue-300"
+//     >
+//       Details
+//     </Badge>
+//     <p className="hidden group-hover:block text-gray-900">ckmwcm</p>
+//   </div>
+// </div>
+// </Card>
