@@ -1,5 +1,6 @@
 import Menu from "./Menu";
 import HomeButton from "./HomeButton";
+import { SVGProps } from "react";
 
 export default function HeaderLayout() {
   return (

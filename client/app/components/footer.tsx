@@ -1,4 +1,4 @@
-import Download from "./iconSvg/download";
+import Download from "./iconSvg/Download";
 import FooterSection1 from "./FooterSection1";
 import FooterSection2 from "./FooterSection2";
 import FooterSection3 from "./FooterSection3";

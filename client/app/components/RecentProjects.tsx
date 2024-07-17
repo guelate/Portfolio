@@ -1,7 +1,7 @@
-import CardVeepeeProject from "./CardVeepeeProject";
 import SionService from "../../public/SionService.png";
 import Metro from "../../public/Metro.png";
 import EnvoitureE from "../../public/EnvoitureE.png";
+import CardRecentProject from "./CardRecentProject";
 
 //TODO: REPLACE START WITH SIGN FOR DONE OR WIP
 export default function RecentProjects() {
@@ -30,7 +30,7 @@ export default function RecentProjects() {
             description also // menu fixed 
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <CardVeepeeProject
+            <CardRecentProject
             id="SionService"
               href=""
               src={SionService}
@@ -38,7 +38,7 @@ export default function RecentProjects() {
               title="SionService"
               description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
             />
-            <CardVeepeeProject
+            <CardRecentProject
               id="Envoiture"
               href=""
               src={EnvoitureE}
@@ -46,7 +46,7 @@ export default function RecentProjects() {
               title="En voiture"
               description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
               />
-            <CardVeepeeProject
+            <CardRecentProject
               id="Metro"
               href=""
               src={Metro}
