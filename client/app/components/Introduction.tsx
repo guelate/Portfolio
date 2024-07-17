@@ -7,14 +7,17 @@ export default function Introduction() {
   return (
     <div>
       <IconsSpace2
-        src1={"https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconPostgres.png"}
-        src2={"https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconReactNative.png"}
+        src1={
+          "https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconPostgres.png"
+        }
+        src2={
+          "https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconReactNative.png"
+        }
       />
       <div className="h-auto flex">
         <IconsSpace1
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconJavascript.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconTypescript.png"
-         
         />
         <Biography />
         <IconsSpace3
@@ -22,9 +25,6 @@ export default function Introduction() {
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconTaiwlindCss.png"
         />
       </div>
-      <div>
-      <a href="/Karre.pdf" download="Karré.pdf">Télécharger le documen CV CV CV CV CV t</a>
-    </div>
     </div>
   );
 }

@@ -1,10 +1,8 @@
-import { Button } from "@/components/ui/button";
-
-import { Download } from "lucide-react";
-
+import Download from "./iconSvg/download";
 import FooterSection1 from "./FooterSection1";
 import FooterSection2 from "./FooterSection2";
 import FooterSection3 from "./FooterSection3";
+import HomeButtonFooter from "./HomeButtonFooter";
 
 export default function Footer() {
   return (
@@ -36,17 +34,11 @@ export default function Footer() {
         children2="En voiture"
         children3="Métro"
       />
-  
 
       <FooterSection3 title="Home">
-        <form method="get" action="/file.doc">
-          {" "}
-          {/* Assurez-vous que le chemin commence par "/" si le fichier est dans le dossier 'public' */}
-          <button type="submit" className="...">
-            <Download /> {/* Suppose que c'est votre composant ou icône SVG */}
-            <p>Download CV</p>
-          </button>
-        </form>
+        <HomeButtonFooter value="Download CV">
+          <Download />
+        </HomeButtonFooter>
       </FooterSection3>
     </footer>
   );

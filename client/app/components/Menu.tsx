@@ -60,7 +60,9 @@ export default function Menu() {
               Current Stack
             </Link>
             <div className="block px-4 py-2 text-sm rounded .rounded-lg hover:bg-gray-200">
-              <p>CV</p>
+  
+              <a href="/KillianCv.pdf" download="KillianCv.pdf">CV</a>
+
             </div>
           </div>
         </div>
