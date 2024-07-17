@@ -22,6 +22,9 @@ export default function Introduction() {
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconTaiwlindCss.png"
         />
       </div>
+      <div>
+      <a href="/Karre.pdf" download="Karré.pdf">Télécharger le documen CV CV CV CV CV t</a>
+    </div>
     </div>
   );
 }
