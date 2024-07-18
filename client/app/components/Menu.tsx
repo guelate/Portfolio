@@ -14,7 +14,7 @@ export default function Menu() {
     setIsOpen(false);
   };
   return (
-    <div className="relative">
+    <div className="md:z-10 sm:z-10">
       <button
         className="p-2 rounded-md hover:bg-muted focus:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
         onClick={toggleMenu}
@@ -27,7 +27,7 @@ export default function Menu() {
       </button>
       {isOpen && (
         <div
-          className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+          className="w-56 rounded-md bg-background shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
           role="menu"
           aria-orientation="vertical"
           aria-labelledby="menu-button"

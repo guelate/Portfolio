@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes wave {
+/* @keyframes wave {
   0% {
     transform: rotate(0deg);
   }
@@ -18,7 +18,7 @@
   100% {
     transform: rotate(0deg);
   }
-}
+} */
 
 @keyframes moveX1 {
   0% {
@@ -33,6 +33,7 @@
   }
 }
 
+
 @keyframes moveX2 {
   0% {
     transform: translate(50px);
@@ -46,10 +47,14 @@
   }
 }
 
+
+
+
+
+
 @keyframes moveY1 {
   0% {
     transform: translate(270px, 50px);
-   
   }
 
   50% {
@@ -57,74 +62,71 @@
   }
 
   100% {
-    transform: translate(270px,50px);
+    transform: translate(270px, 50px);
   }
 }
 
-
 @keyframes moveY2 {
   0% {
-    transform: translate(40px,-10px);
+    transform: translate(40px, -10px);
   }
   50% {
-    transform: translate(40px,50px);
+    transform: translate(40px, 50px);
   }
   100% {
-    transform: translate(40px,-10px);
+    transform: translate(40px, -10px);
   }
 }
 
 @keyframes moveY3 {
   0% {
-    transform: translate(40px,50px);
+    transform: translate(40px, 50px);
   }
   50% {
-    transform: translate(40px,-10px);
+    transform: translate(40px, -10px);
   }
   100% {
-    transform: translate(40px,50px);
+    transform: translate(40px, 50px);
   }
 }
 
 @keyframes moveY4 {
   0% {
-    transform: translate(270px,-10px);
+    transform: translate(270px, -10px);
   }
   50% {
-    transform: translate(270px,50px);
+    transform: translate(270px, 50px);
   }
   100% {
-    transform: translate(270px,-10px);
+    transform: translate(270px, -10px);
   }
 }
-
 
 @keyframes moveX3 {
   0% {
-    transform: translate(270px,30px);
+    transform: translate(270px, 30px);
   }
 
   50% {
-    transform: translate(40px,30px);
+    transform: translate(40px, 30px);
   }
 
   100% {
-    transform: translate(270px,30px);
+    transform: translate(270px, 30px);
   }
 }
 
-
 @keyframes moveX4 {
   0% {
-    transform: translate(40px,90px);
+    transform: translate(40px, 90px);
   }
 
   50% {
-    transform: translate(270px,90px);
+    transform: translate(270px, 90px);
   }
 
   100% {
-    transform: translate(40px,90px);
+    transform: translate(40px, 90px);
   }
 }
 
@@ -171,3 +173,61 @@
   font-family: "sans-serif", sans-serif;
   font-size: larger;
 }
+
+
+@media (max-width: 768px) {
+
+  .cache{
+    display:none
+  }
+
+  @keyframes moveX1 {
+    0% {
+      transform: translate(0px);
+    }
+  
+    50% {
+      transform: translateX(30px);
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+  
+
+  .icon-moveX1 {
+    /* display:none */
+    animation: moveX1 20s infinite;
+  }
+  .icon-moveX2 {
+    animation: moveX2 20s infinite;
+  }
+  
+  .icon-moveX3 {
+    animation: moveX3 20s infinite;
+  }
+  .icon-moveX4 {
+    animation: moveX4 20s infinite;
+  }
+  
+  .icon-moveY1 {
+    animation: moveY1 5s infinite;
+  }
+  .icon-moveY2 {
+    animation: moveY2 5s infinite;
+  }
+  
+  .icon-moveY3 {
+    animation: moveY3 5s infinite;
+  }
+  
+  .icon-moveY4 {
+    animation: moveY4 5s infinite;
+  }
+
+}
+
+@media (max-width: 995px) {
+
+}
+
