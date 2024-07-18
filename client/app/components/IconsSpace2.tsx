@@ -7,11 +7,28 @@ interface IconsSpaceProps2 {
 
 export default function IconsSpace2({ src1, src2 }: IconsSpaceProps2) {
   return (
-    <div className="w-full h-28 px-36 py-4 relative flex flex-col justify-between">
+    <div className="border border-black">
       <ImageMoving src={src1} translate="icon-moveX1"/>
       <ImageMoving src={src2} translate="icon-moveX2" />
     </div>
   );
 }
+
+
+// import ImageMoving from "./ImageMoving";
+
+// interface IconsSpaceProps2 {
+//   src1: string;
+//   src2: string;
+// }
+
+// export default function IconsSpace2({ src1, src2 }: IconsSpaceProps2) {
+//   return (
+//     <div className="w-full h-28 px-36 py-4 relative flex flex-col justify-between">
+//       <ImageMoving src={src1} translate="icon-moveX1"/>
+//       <ImageMoving src={src2} translate="icon-moveX2" />
+//     </div>
+//   );
+// }
 
 
