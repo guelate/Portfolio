@@ -21,14 +21,14 @@ export default function Biography() {
   }, []);
 
   return (
-    <div className="text-center">
+    <div className="flex flex-col gap-3 text-center">
       <h2 className="">
-        <p className="">
+        <p className="motion-safe:animate-wave text-2xl md:text-3xl font-bold tracking-tight text-blue-300 hover:text-blue-40">
           {text}
           <span className="wave-hand">👋</span>
         </p>
       </h2>
-      <p  className="">
+      <p className="text-left break-words">
         Passionate web developer with a preference for technologies like NextJS,
         TypeScript, Taiwlindcss and Shadcn /ui. I enjoy crafting innovative web
         projects and building SaaS applications.

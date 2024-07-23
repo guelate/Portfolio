@@ -10,8 +10,8 @@ export default function Home() {
     <div>
       <HomeHeader />
       <Introduction/>
-      {/* <VeepeeExperiment />
-      <RecentProjects /> 
+   <VeepeeExperiment />
+        {/*  <RecentProjects /> 
       <DailyStack />
       <Footer /> */}
     </div>

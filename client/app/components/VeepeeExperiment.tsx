@@ -43,17 +43,17 @@ export default function VeepeeExperiment() {
   ];
 
   return (
-    <div className="">
-      <div className="">
+    <div>
+      <div className="px-4">
         <IconsSpace4
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconK8s.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconPrisma.png"
         />
-        <div className="">
-          <h2 id="MyVeepeeExperience" className="">
+        <div className="flex flex-col gap-3 text-center">
+          <h2 id="MyVeepeeExperience" className="text-2xl md:text-3xl font-bold tracking-tight text-blue-300 hover:text-blue-40">
             My Veepee experience
           </h2>
-          <p className="">
+          <p className="text-left break-words">
             As a web developer, I&apos;m constantly exploring new technologies
             and techniques to push the boundaries of what&apos;s possible on the
             web. At Veepe, I&apos;ve had the opportunity to experiment with a
@@ -67,7 +67,7 @@ export default function VeepeeExperiment() {
         />
       </div>
 
-      <div className="">
+      <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4">
         <CardVeepeeProject
           id="Moderation"
           title="Moderation"

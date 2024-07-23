@@ -24,16 +24,15 @@ export default function CardVeepeeProject({
   return (
     <Card
       id={id}
-      className=""
+      className="bg-gray-200 relative"
     >
-      <div className="">
-        {/* <Image src={src} alt="Icon Image" width={80} height={80} className="w-20 h-20" /> */}
+      <div className="flex flex-col gap-2 border border-gray-100 p-2">
         <div className="">
-          <h3 className="">{title}</h3>
-          <p className="">{description}</p>
+          <h3 className="text-xl font-semibold">{title}</h3>
+          <p className="text-gray-500">{description}</p>
         </div>
 
-        <div className="">
+        <div className="flex justify-end items-center group w-full ">
           <Badge
             variant="secondary"
             className=""
@@ -41,9 +40,9 @@ export default function CardVeepeeProject({
             Details
           </Badge>
 
-          <div className="">
-            <p className="">Stack I used:</p>
-            <div className="">
+          <div className="absolute hidden group-hover:flex flex-col border border-gray-400 text-gray-700 p-2 z-10 w-full sm:w-3/6 gap-1 -translate-y-16 translate-x-0 sm:translate-x-11 rounded-lg bg-gray-50">
+            <p className="text-lg font-semibold text-gray-700">Stack I used:</p>
+            <div className="flex flex-wrap gap-1">
               {badges.map((badge, index) => (
                 <Badge
                   key={index}
@@ -54,7 +53,7 @@ export default function CardVeepeeProject({
                 </Badge>
               ))}
             </div>
-            <div className="">
+            <div className="flex items-center gap-1 px-2 mt-1">
               <Info className="h-4 w-4" />
               <p className="text-gray-500">
                 The source code is confidential, sorry 😅
