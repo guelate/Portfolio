@@ -10,10 +10,10 @@ export default function Home() {
     <div>
       <HomeHeader />
       <Introduction/>
-      <VeepeeExperiment />
+      {/* <VeepeeExperiment />
       <RecentProjects /> 
       <DailyStack />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }

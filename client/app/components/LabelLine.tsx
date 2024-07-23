@@ -13,7 +13,7 @@ import { Label } from "./ui/label";
 
 export default function LabelLine() {
   return (
-    <div className="">
+    <div className="flex gap-3 items-center justify-center rounded .rounded-lg">
       <a href="https://www.linkedin.com/in/killian-seyo/">
         <Button className="h-full sm:h-auto rounded-lg bg-blue-200 hover:bg-blue-300 text-blue-800 m-0 p-2">
           Linkedin

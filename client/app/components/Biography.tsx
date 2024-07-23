@@ -21,7 +21,7 @@ export default function Biography() {
   }, []);
 
   return (
-    <div className="">
+    <div className="text-center">
       <h2 className="">
         <p className="">
           {text}

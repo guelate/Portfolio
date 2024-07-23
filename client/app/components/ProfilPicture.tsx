@@ -9,7 +9,7 @@ export default function ProfilPicture() {
         <Image
           src={profil}
           alt="Profil picture"
-          className=""
+          className="rounded-full w-full h-full border border-gray-300"
         />
       </Avatar>
     </div>
