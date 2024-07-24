@@ -187,6 +187,20 @@
 }
 
 @media (max-width: 768px) {
+
+  @keyframes moveY1 {
+    0% {
+      transform: translate(380px, 100px);
+    }
+  
+    50% {
+      transform: translate(380px, 10px);
+    }
+  
+    100% {
+      transform: translate(380px, 100px);
+    }
+  }
   @keyframes moveX1 {
     0% {
       transform: translate(55px);
@@ -242,15 +256,15 @@
 
   @keyframes moveX5 {
     0% {
-      transform: translate(40px, 100px);
+      transform: translate(270px, 5px);
     }
   
     50% {
-      transform: translate(270px, 100px);
+      transform: translate(40px, 5px);
     }
   
     100% {
-      transform: translate(40px, 100px);
+      transform: translate(270px, 5px);
     }
   }
 

@@ -67,7 +67,7 @@ export default function VeepeeExperiment() {
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconNextJS.png"
         />
       </div>
-
+ 
       <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4">
         <CardVeepeeProject
           id="Moderation"
@@ -87,7 +87,7 @@ export default function VeepeeExperiment() {
           description="This web extension that recommends you products while you browse certain e-commerce websites."
           badges={badgeData1}
         />
-      </div>
+      </div> 
     </div>
   );
 }
