@@ -2,20 +2,57 @@ import SionService from "../../public/SionService.png";
 import Metro from "../../public/Metro.png";
 import EnvoitureE from "../../public/EnvoitureE.png";
 import CardRecentProject from "./CardRecentProject";
+import CardVeepeeProject from "./CardVeepeeProject";
 
 //TODO: REPLACE START WITH SIGN FOR DONE OR WIP
 export default function RecentProjects() {
+  const badgeData3 = [
+    { text: "NextJS", bgClass: "bg-gray-700", borderClass: "border-gray-800" },
+    {
+      text: "Typescript",
+      bgClass: "bg-sky-500",
+      borderClass: "border-sky-500",
+    },
+    {
+      text: "PostgreSQL",
+      bgClass: "bg-blue-400",
+      borderClass: "border-blue-500",
+    },
+    {
+      text: "Shadcn /UI",
+      bgClass: "bg-zinc-400",
+      borderClass: "border-zinc-500",
+    },
+  ];
+  const badgeData4 = [
+    {
+      text: "ReactJS",
+      bgClass: "bg-green-700",
+      borderClass: "border-gray-800",
+    },
+    {
+      text: "Javascript",
+      bgClass: "bg-yellow-400",
+      borderClass: "border-yellow-500",
+    },
+
+    {
+      text: "Styled Components",
+      bgClass: "bg-pink-400",
+      borderClass: "border-zinc-500",
+    },
+  ];
   return (
     <div className="">
       <div className="">
-        <div className="">
+        <div className="flex flex-col text-center p-4 gap-3">
           <h1
             id="SomeProject"
-            className=""
+            className="text-3xl md:text-5xl font-bold tracking-tight text-blue-300 hover:text-blue-400"
           >
             My Freelance Mission
           </h1>
-          <p className="">
+          <p className="text-lg md:text-xl text-gray-600 text-left">
             As a freelance web developer, my mission is to create beautiful,
             functional websites and web applications that help businesses and
             individuals achieve their online goals. I&apos;m passionate about
@@ -24,13 +61,13 @@ export default function RecentProjects() {
           </p>
         </div>
         <div>
-          <h2 className="">
+          {/* <h2 className="">
             Recent Projects// TODO: complete both component with button:
             complete or WIP and add also button more for look readmee + make
             description also // menu fixed 
-          </h2>
-          <div className="">
-            <CardRecentProject
+          </h2> */}
+          <div className="flex flex-col border border-gray-100 rounded .rounded bg-gray-50 p-4">
+            {/* <CardRecentProject
             id="SionService"
              
               title="SionService"
@@ -47,15 +84,33 @@ export default function RecentProjects() {
           
               title="Métro"
               description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
-            />
+            /> */}
+            <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4">
+              <CardVeepeeProject
+                id="SionService"
+                title="SionService"
+                description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
+                badges={badgeData3}
+              />
+              <CardVeepeeProject
+                id="Envoiture"
+                title="En voiture"
+                description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
+                badges={badgeData4}
+              />
+              <CardVeepeeProject
+                id="Metro"
+                title="Métro"
+                description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
+                badges={badgeData3}
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
-
-
 
 // import SionService from "../../public/SionService.png";
 // import Metro from "../../public/Metro.png";
@@ -86,7 +141,7 @@ export default function RecentProjects() {
 //           <h2 className="text-2xl md:text-3xl font-bold mb-6 text-blue-300 hover:text-blue-400">
 //             Recent Projects// TODO: complete both component with button:
 //             complete or WIP and add also button more for look readmee + make
-//             description also // menu fixed 
+//             description also // menu fixed
 //           </h2>
 //           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 //             <CardRecentProject

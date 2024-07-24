@@ -17,23 +17,23 @@ export default function CardVeepeeProject({
     return (
       <Card
         id={id}
-        className=""
+        className="bg-gray-200 relative"
       >
-        <div className="">
+        <div className="flex flex-col gap-2 border border-gray-100 p-2">
           <div className="">
-            <h3 className="">{title}</h3>
+            <h3 className="text-xl font-semibold">{title}</h3>
             <p className="text-gray-500">{description}</p>
           </div>
         </div>
   
-        <div className="">
+        <div className="flex justify-end items-center group">
           <Badge
             variant="secondary"
             className="border border-blue-50 bg-blue-100 hover:bg-blue-200 hover:border-blue-300"
           >
             Details
           </Badge>
-          <p className="hidden group-hover:block text-gray-900">ckmwcm</p>
+          <p className="absolute hidden group-hover:block text-gray-900">ckmwcm</p>
         </div>
       </Card>
     );

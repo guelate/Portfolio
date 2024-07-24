@@ -6,7 +6,7 @@ import HomeButtonFooter from "./HomeButtonFooter";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer className="flex flex-col">
       <FooterSection1
         title="Home"
         href1="https://www.linkedin.com/in/killian-seyo/"
@@ -36,9 +36,7 @@ export default function Footer() {
       />
 
       <FooterSection3 title="Home">
-        <HomeButtonFooter value="Download CV">
-          <Download />
-        </HomeButtonFooter>
+        <HomeButtonFooter value="Download CV" />
       </FooterSection3>
     </footer>
   );

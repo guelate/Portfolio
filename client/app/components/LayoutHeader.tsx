@@ -1,10 +1,10 @@
 import Menu from "./Menu";
 import HomeButton from "./HomeButton";
-import { SVGProps } from "react";
+
 
 export default function HeaderLayout() {
   return (
-    <div className="flex bg-gray-100 p-3 justify-between w-full fixed">
+    <div className="flex bg-gray-100 p-3 justify-between w-full fixed z-10">
       <HomeButton />
       <Menu />
     </div>

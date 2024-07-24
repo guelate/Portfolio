@@ -11,9 +11,9 @@ export default function Home() {
       <HomeHeader />
       <Introduction/>
    <VeepeeExperiment />
-        {/*  <RecentProjects /> 
-      <DailyStack />
-      <Footer /> */}
+       <RecentProjects /> 
+       <DailyStack />
+       <Footer />
     </div>
   );
 }

@@ -32,10 +32,10 @@ export default function CardVeepeeProject({
           <p className="text-gray-500">{description}</p>
         </div>
 
-        <div className="flex justify-end items-center group w-full ">
+        <div className="flex justify-end items-center group w-full">
           <Badge
             variant="secondary"
-            className=""
+            className="bg-blue-200"
           >
             Details
           </Badge>

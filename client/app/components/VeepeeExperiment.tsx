@@ -49,7 +49,7 @@ export default function VeepeeExperiment() {
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconK8s.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconPrisma.png"
         />
-        <div className="flex flex-col gap-3 text-center">
+        <div className="flex flex-col p-1 gap-3 text-center">
           <h2 id="MyVeepeeExperience" className="text-2xl md:text-3xl font-bold tracking-tight text-blue-300 hover:text-blue-40">
             My Veepee experience
           </h2>

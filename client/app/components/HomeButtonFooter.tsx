@@ -2,17 +2,14 @@ import Link from "next/link";
 
 export default function HomeButton({ children, value }: any) {
   return (
-    <Link
-      href="/KillianCv.pdf"
-      download="KillianCv.pdf"
-      className=""
-    >
-      {children}
-      <p id="Home">{value}</p>
-    </Link>
+    <div className="flex flex-row bg-gray-200 hover:bg-gray-300 text-gray-800 border-gray-500 p-2 items-center  border rounded .rounded-lg text-sm font-medium ">
+      <Link href="/KillianCv.pdf" download="KillianCv.pdf">
+        {children}
+        <p id="Home">{value}</p>
+      </Link>
+    </div>
   );
 }
-
 
 // import Link from "next/link";
 

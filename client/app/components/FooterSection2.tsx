@@ -20,24 +20,24 @@ export default function FooterSection2({
   children3,
 }: FooterSectionProps) {
   return (
-    <div className="">
-      <h4 className="">{title}</h4>
+    <div className="flex flex-col gap-3 text-center pt-2">
+      <h4 className="text-lg font-semibold">{title}</h4>
       <Link
         href={href1}
-        className=""
+        className="hover:underline hover:underline-offset-4"
       >
-        <p className="">{children1}</p>
+        <p className="text-gray-600">{children1}</p>
       </Link>
       <Link
         href={href2}
-        className=""
+        className="hover:underline hover:underline-offset-4"
       >
         <p className="text-gray-600">{children2}</p>
       </Link>
 
       <Link
         href={href3}
-        className=""
+        className="hover:underline hover:underline-offset-4"
       >
         <p className="text-gray-600">{children3}</p>
       </Link>
