@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 @keyframes moveX1 {
   0% {
     transform: translate(55px);
@@ -18,7 +16,6 @@
   }
 }
 
-
 @keyframes moveX2 {
   0% {
     transform: translate(50px);
@@ -31,7 +28,6 @@
     transform: translateX(50px);
   }
 }
-
 
 @keyframes moveX3 {
   0% {
@@ -61,6 +57,33 @@
   }
 }
 
+@keyframes moveX5 {
+  0% {
+    transform: translate(40px, 100px);
+  }
+
+  50% {
+    transform: translate(270px, 100px);
+  }
+
+  100% {
+    transform: translate(40px, 100px);
+  }
+}
+
+@keyframes moveX6 {
+  0% {
+    transform: translate(40px, 110px);
+  }
+
+  50% {
+    transform: translate(270px, 110px);
+  }
+
+  100% {
+    transform: translate(40px, 110px);
+  }
+}
 
 @keyframes moveY1 {
   0% {
@@ -75,7 +98,6 @@
     transform: translate(350px, 100px);
   }
 }
-
 
 @keyframes moveY2 {
   0% {
@@ -113,10 +135,8 @@
   }
 }
 
-
-
 .icon-moveX1 {
-  animation: moveX1 20s infinite; 
+  animation: moveX1 20s infinite;
 }
 .icon-moveX2 {
   animation: moveX2 20s infinite;
@@ -127,6 +147,13 @@
 }
 .icon-moveX4 {
   animation: moveX4 20s infinite;
+}
+
+.icon-moveX5 {
+  animation: moveX5 20s infinite;
+}
+.icon-moveX6 {
+  animation: moveX6 20s infinite;
 }
 
 .icon-moveY1 {
@@ -159,14 +186,12 @@
   font-size: larger;
 }
 
-
 @media (max-width: 768px) {
-
   @keyframes moveX1 {
     0% {
       transform: translate(55px);
     }
-  
+
     50% {
       transform: translateX(300px);
     }
@@ -174,7 +199,6 @@
       transform: translateX(55px);
     }
   }
-  
 
   @keyframes moveX2 {
     0% {
@@ -188,6 +212,62 @@
     }
   }
 
+  @keyframes moveX3 {
+    0% {
+      transform: translate(270px, 20px);
+    }
+
+    50% {
+      transform: translate(40px, 20px);
+    }
+
+    100% {
+      transform: translate(270px, 20px);
+    }
+  }
+
+  @keyframes moveX4 {
+    0% {
+      transform: translate(40px, 180px);
+    }
+
+    50% {
+      transform: translate(270px, 180px);
+    }
+
+    100% {
+      transform: translate(40px, 180px);
+    }
+  }
+
+  @keyframes moveX5 {
+    0% {
+      transform: translate(40px, 100px);
+    }
+  
+    50% {
+      transform: translate(270px, 100px);
+    }
+  
+    100% {
+      transform: translate(40px, 100px);
+    }
+  }
+
+  @keyframes moveX6 {
+    0% {
+      transform: translate(40px, 110px);
+    }
+  
+    50% {
+      transform: translate(270px, 110px);
+    }
+  
+    100% {
+      transform: translate(40px, 110px);
+    }
+  }
+
   .icon-moveX1 {
     /* display:none */
     animation: moveX1 20s infinite;
@@ -195,39 +275,45 @@
   .icon-moveX2 {
     animation: moveX2 20s infinite;
   }
-  
+
   .icon-moveX3 {
     animation: moveX3 20s infinite;
   }
+
   .icon-moveX4 {
-    display:none;
-    /* animation: moveX4 20s infinite; */
+    /* display:none; */
+    animation: moveX4 20s infinite;
   }
-  
+
+  .icon-moveX5 {
+    animation: moveX5 20s infinite;
+  }
+
+  .icon-moveX6 {
+    display:none;
+    /* animation: moveX6 20s infinite; */
+  }
+
   .icon-moveY1 {
     animation: moveY1 20s infinite;
   }
   .icon-moveY2 {
     animation: moveY2 20s infinite;
   }
-  
+
   .icon-moveY3 {
-    display:none;
+    display: none;
     /* animation: moveY3 5s infinite; */
   }
-  
+
   .icon-moveY4 {
     display: none;
     /* animation: moveY4 5s infinite; */
   }
-
 }
 
 @media (max-width: 995px) {
-
-  .cache{
+  .cache {
     padding: 4px;
   }
-
 }
-

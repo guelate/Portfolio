@@ -3,6 +3,7 @@ import Moderation from "../../public/Moderation.jpg";
 import VeepeeFinder from "../../public/VeepeeFinder.jpg";
 import UpList from "../../public/UpList.png";
 import IconsSpace4 from "./IconSpace4";
+import IconsSpace5 from "./IconsSpace5";
 
 export default function VeepeeExperiment() {
   const badgeData1 = [
@@ -61,7 +62,7 @@ export default function VeepeeExperiment() {
             libraries to innovative design systems.
           </p>
         </div>
-        <IconsSpace4
+        <IconsSpace5
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconNodeJS.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconNextJS.png"
         />
