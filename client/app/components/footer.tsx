@@ -6,7 +6,7 @@ import HomeButtonFooter from "./HomeButtonFooter";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col">
+    <footer className="flex flex-col bg-gray-100">
       <FooterSection1
         title="Home"
         href1="https://www.linkedin.com/in/killian-seyo/"

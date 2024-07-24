@@ -16,9 +16,9 @@ export default function Menu() {
   };
 
   return (
-    <div className="">
+    <div className="flex flex-col">
       <button
-        className=""
+        className="flex w-auto justify-end rounded-md"
         onClick={toggleMenu}
       >
         {isOpen ? (

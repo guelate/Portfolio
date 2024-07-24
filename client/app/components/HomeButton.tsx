@@ -5,7 +5,7 @@ export default function HomeButton() {
   return (
     <Link href="#Home" className="flex border border-gray-300 items-center bg-gray-300 w-1/5 h-10  md:w-20 justify-between p-2 rounded .rounded-lg text-gray-800 hover:border-gray-500  md:hover:-translate-y-1 lg:hover:-translate-y-1 duration-300">
       <House size="20px"/>
-      <p id="Home" className="text-sm">Home</p>
+      <p className="text-sm">Home</p>
     </Link>
   );
 }
