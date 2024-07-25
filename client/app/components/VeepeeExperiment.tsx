@@ -50,11 +50,12 @@ export default function VeepeeExperiment() {
           src1="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/IconK8s.png"
           src2="https://raw.githubusercontent.com/guelate/Portfolio/main/client/public/iconPrisma.png"
         />
-        <div className="flex flex-col p-1 gap-3 text-center">
-          <h2 id="MyVeepeeExperience" className="text-2xl md:text-3xl font-bold tracking-tight text-blue-300 hover:text-blue-40">
+        <div className="flex flex-col p-1 gap-3 text-center md:px-10 border my-3 lg:px-48">
+        {/* text-3xl md:text-5xl font-bold tracking-tight text-blue-300 hover:text-blue-400 */}
+          <h2 id="MyVeepeeExperience" className="text-3xl font-bold tracking-tighter mb-4 sm:text-4xl md:text-4xl text-blue-300 hover:text-blue-400">
             My Veepee experience
           </h2>
-          <p className="text-left break-words">
+          <p className="text-left break-words text-lg md:text-xl text-gray-600">
             As a web developer, I&apos;m constantly exploring new technologies
             and techniques to push the boundaries of what&apos;s possible on the
             web. At Veepe, I&apos;ve had the opportunity to experiment with a
@@ -68,7 +69,7 @@ export default function VeepeeExperiment() {
         />
       </div>
  
-      <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4">
+      <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4 md:mx-24 mb-5 md:w-3/4 lg:mx-96 lg:w-2/4">
         <CardVeepeeProject
           id="Moderation"
           title="Moderation"

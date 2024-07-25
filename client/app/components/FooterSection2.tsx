@@ -20,7 +20,7 @@ export default function FooterSection2({
   children3,
 }: FooterSectionProps) {
   return (
-    <div className="flex flex-col gap-3 text-center pt-2">
+    <div className="flex flex-col gap-3 text-center pt-2 md:p-3 md:gap-2">
       <h4 className="text-lg font-semibold">{title}</h4>
       <Link
         href={href1}

@@ -43,12 +43,11 @@ export default function RecentProjects() {
     },
   ];
   return (
-    <div className="">
-      <div className="">
-        <div className="flex flex-col text-center p-4 gap-3">
+      <div className="flex flex-col">
+        <div className="flex flex-col text-center p-8 gap-5 my-6 md:px-10 lg:px-48">
           <h1
             id="SomeProject"
-            className="text-3xl md:text-5xl font-bold tracking-tight text-blue-300 hover:text-blue-400"
+            className="text-3xl md:text-4xl font-bold tracking-tight text-blue-300 hover:text-blue-400"
           >
             My Freelance Mission
           </h1>
@@ -61,31 +60,9 @@ export default function RecentProjects() {
           </p>
         </div>
         <div>
-          {/* <h2 className="">
-            Recent Projects// TODO: complete both component with button:
-            complete or WIP and add also button more for look readmee + make
-            description also // menu fixed 
-          </h2> */}
-          <div className="flex flex-col border border-gray-100 rounded .rounded bg-gray-50 p-4">
-            {/* <CardRecentProject
-            id="SionService"
-             
-              title="SionService"
-              description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
-            />
-            <CardRecentProject
-              id="Envoiture"
-             
-              title="En voiture"
-              description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
-              />
-            <CardRecentProject
-              id="Metro"
-          
-              title="Métro"
-              description="This project is a platform where users submit ideas, and only selected ones are developed into projects."
-            /> */}
-            <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4">
+          <div className="flex flex-col border border-gray-100 rounded .rounded bg-gray-50 p-4 md:mx-24 mb-5 md:w-3/4 lg:mx-96 lg:w-2/4">
+         
+            <div className="flex flex-col gap-4 border border-gray-100 rounded .rounded bg-gray-50 p-4 ">
               <CardVeepeeProject
                 id="SionService"
                 title="SionService"
@@ -108,7 +85,6 @@ export default function RecentProjects() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 

@@ -11,7 +11,7 @@ export default function Description() {
       <p className="text-sm md:text-base lg:text-lg">
         I build web applications that turn ideas into reality 💭💻
       </p>
-      <div>
+      <div className="py-4 w-full max-w-xl">
         <LabelLine />
       </div>
     </div>

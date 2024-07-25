@@ -8,7 +8,7 @@ import Shadcn from "./iconSvg/ShadcnSvg";
 
 export default function DailyStack() {
   return (
-    <div className="flex flex-col text-center justify-center items-center gap-3">
+    <div className="flex flex-col mt-10 text-center justify-center items-center gap-3">
       <h2
         id="CurrentStack"
         className="text-3xl font-bold tracking-tighter sm:text-5xl text-pink-400 hover:text-pink-500 text-center"
@@ -16,7 +16,30 @@ export default function DailyStack() {
         Stack I use on a daily ⚡️
       </h2>
 
-      <div className="flex p-3 gap-1">
+      <div className="p-3 gap-1 grid grid-cols-2 md:grid-cols-3 md:grid-rows-2">
+        <SvgCard href="https://nextjs.org/" text="NextJS">
+          <NextJS />
+        </SvgCard>
+        <SvgCard href="https://www.typescriptlang.org/" text="Typescript">
+          <TypeScript />
+        </SvgCard>
+        <SvgCard href="https://tailwindcss.com/" text="Taiwlind CSS">
+          <Tailwind />
+        </SvgCard>
+
+        <SvgCard href="https://www.postgresql.org/" text="PostgreSQL">
+          <Postgres />
+        </SvgCard>
+        <SvgCard href="https://www.prisma.io/" text="Prisma">
+          <Prisma />
+        </SvgCard>
+        <SvgCard href="https://ui.shadcn.com/" text="Shadcn/UI">
+          <Shadcn />
+        </SvgCard>
+      </div>
+
+      {/* <div className="flex p-3 gap-1">
+
         <div className="flex flex-col">
           <SvgCard href="https://nextjs.org/" text="NextJS">
             <NextJS />
@@ -28,6 +51,7 @@ export default function DailyStack() {
             <Tailwind />
           </SvgCard>
         </div>
+
         <div className="flex flex-col">
           <SvgCard href="https://www.postgresql.org/" text="PostgreSQL">
             <Postgres />
@@ -41,7 +65,7 @@ export default function DailyStack() {
             <Shadcn />
           </SvgCard>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

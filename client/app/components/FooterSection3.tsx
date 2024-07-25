@@ -8,7 +8,7 @@ export default function FooterSection3({
   children,
 }: FooterSectionProps) {
   return (
-    <div className="flex flex-col justify-center items-center gap-3">
+    <div className="flex flex-col justify-center items-center gap-3 md:justify-between md:pt-4 pb-12">
       <h4 className="text-lg font-semibold">{title}</h4>
       {children}
     </div>

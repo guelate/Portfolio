@@ -32,7 +32,7 @@ export default function FooterSection1({
   children3,
 }: FooterSectionProps) {
   return (
-    <div className="flex flex-col justify-center items-center text-center gap-3">
+    <div className="flex flex-col text-center gap-3 md:p-3 md:gap-2">
 
       <h4 className="text-lg font-semibold mb-4 inline-block">{title}</h4>
       <Link

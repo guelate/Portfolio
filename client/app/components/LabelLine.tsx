@@ -15,19 +15,19 @@ export default function LabelLine() {
   return (
     <div className="flex gap-3 items-center justify-center rounded .rounded-lg">
       <a href="https://www.linkedin.com/in/killian-seyo/">
-        <Button className="h-full sm:h-auto rounded-lg bg-blue-200 hover:bg-blue-300 text-blue-800 m-0 p-2">
+        <Button className="h-full sm:h-auto rounded .rounded-lg bg-blue-200 hover:bg-blue-300 text-blue-800 m-0 p-2 border border-blue-300">
           Linkedin
         </Button>
       </a>
       <a href="https://github.com/guelate">
-        <Button className="h-full sm:h-auto rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 m-0 p-2">
+        <Button className="h-full sm:h-auto rounded .rounded-lg bg-gray-200 hover:bg-gray-300 border border-gray-300 text-gray-800 m-0 p-2">
           Github
         </Button>
       </a>
 
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="h-full sm:h-auto rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 m-0 p-2">
+          <Button className="h-full sm:h-auto rounded .rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 border border-pink-300 m-0 p-2">
             Gmail
           </Button>
         </DialogTrigger>
