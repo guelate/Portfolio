@@ -9,7 +9,7 @@ export default function Description() {
         Hey ! I&apos;m Killian 😉
       </h3>
       <p className="text-sm md:text-base lg:text-lg">
-        I build web applications that turn ideas into reality 💭💻
+        I build web apps that turn ideas into reality 💭💻
       </p>
       <div className="py-4 w-full max-w-xl">
         <LabelLine />

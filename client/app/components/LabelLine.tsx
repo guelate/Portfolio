@@ -10,6 +10,15 @@ import {
 } from "./ui/dialog";
 import { Input } from "./ui/input";
 import { Label } from "./ui/label";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "./ui/card";
+import { Textarea } from "./ui/textarea";
 
 export default function LabelLine() {
   return (
@@ -27,116 +36,88 @@ export default function LabelLine() {
 
       <Dialog>
         <DialogTrigger asChild>
-          <Button className="h-full sm:h-auto rounded .rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 border border-pink-300 m-0 p-2">
+          <Button
+            onClick={() => console.log("hello")}
+            className="h-full sm:h-auto rounded .rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 border border-pink-300 m-0 p-2"
+          >
             Gmail
           </Button>
         </DialogTrigger>
-        <DialogContent className="sm:max-w-[425px]">
+
+        <DialogContent className="flex flex-col w-3/4 justify-center items-center bg-gray-50 rounded .rounded-lg">
           <DialogHeader>
-            <DialogTitle>Edit profile</DialogTitle>
-            <DialogDescription>
-              Make changes to your profile here. Click save when you are done.
-            </DialogDescription>
+            <DialogTitle>Contact Me</DialogTitle>
           </DialogHeader>
-          <div className="grid gap-4 py-4">
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="name" className="text-right">
-                Name
-              </Label>
+          <CardContent className="w-3/4">
+            <div className="">
+              <Label htmlFor="email">Email</Label>
               <Input
-                id="name"
-                defaultValue="Pedro Duarte"
-                className="col-span-3"
+                id="email"
+                type="email"
+                placeholder="Email"
+                required
+                className="placeholder-gray-100"
               />
             </div>
-            <div className="grid grid-cols-4 items-center gap-4">
-              <Label htmlFor="username" className="text-right">
-                Username
-              </Label>
-              <Input
-                id="username"
-                defaultValue="@peduarte"
-                className="col-span-3"
+            <div className="">
+              <Label htmlFor="subject">Subject</Label>
+              <Input id="subject" placeholder="Objet" required />
+            </div>
+            <div className="">
+              <Label htmlFor="body">Message</Label>
+              <Textarea
+                id="body"
+                placeholder="Write your message here..."
+                className="min-h-[150px]"
+                required
               />
             </div>
-          </div>
-          <DialogFooter>
-            <Button type="submit">Save changes</Button>
+          </CardContent>
+          <DialogFooter className="border border-black rounded .rounded-lg">
+            <Button
+              type="submit"
+              className="bg-blue-100 border border-blue-200 hover:bg-blue-300"
+            >
+              Send
+            </Button>
           </DialogFooter>
         </DialogContent>
       </Dialog>
     </div>
   );
 }
-
-
-// import { Button } from "@/components/ui/button";
-// import {
-//   Dialog,
-//   DialogContent,
-//   DialogDescription,
-//   DialogFooter,
-//   DialogHeader,
-//   DialogTitle,
-//   DialogTrigger,
-// } from "./ui/dialog";
-// import { Input } from "./ui/input";
-// import { Label } from "./ui/label";
-
-// export default function LabelLine() {
-//   return (
-//     <div className="flex gap-3 sm:flex-row justify-center items-center h-8 sm:h-auto w-full text-center space-y-2 sm:space-y-0 sm:space-x-2">
-//       <a href="https://www.linkedin.com/in/killian-seyo/">
-//         <Button className="h-full sm:h-auto rounded-lg bg-blue-200 hover:bg-blue-300 text-blue-800 m-0 p-2">
-//           Linkedin
-//         </Button>
-//       </a>
-//       <a href="https://github.com/guelate">
-//         <Button className="h-full sm:h-auto rounded-lg bg-gray-200 hover:bg-gray-300 text-gray-800 m-0 p-2">
-//           Github
-//         </Button>
-//       </a>
-
-//       <Dialog>
-//         <DialogTrigger asChild>
-//           <Button className="h-full sm:h-auto rounded-lg bg-pink-200 hover:bg-pink-300 text-pink-800 m-0 p-2">
-//             Gmail
-//           </Button>
-//         </DialogTrigger>
-//         <DialogContent className="sm:max-w-[425px]">
-//           <DialogHeader>
-//             <DialogTitle>Edit profile</DialogTitle>
-//             <DialogDescription>
-//               Make changes to your profile here. Click save when you are done.
-//             </DialogDescription>
-//           </DialogHeader>
-//           <div className="grid gap-4 py-4">
-//             <div className="grid grid-cols-4 items-center gap-4">
-//               <Label htmlFor="name" className="text-right">
-//                 Name
-//               </Label>
-//               <Input
-//                 id="name"
-//                 defaultValue="Pedro Duarte"
-//                 className="col-span-3"
-//               />
-//             </div>
-//             <div className="grid grid-cols-4 items-center gap-4">
-//               <Label htmlFor="username" className="text-right">
-//                 Username
-//               </Label>
-//               <Input
-//                 id="username"
-//                 defaultValue="@peduarte"
-//                 className="col-span-3"
-//               />
-//             </div>
-//           </div>
-//           <DialogFooter>
-//             <Button type="submit">Save changes</Button>
-//           </DialogFooter>
-//         </DialogContent>
-//       </Dialog>
-//     </div>
-//   );
-// }
+{
+  /* <DialogContent className="flex flex-col w-2/4 justify-center items-center bg-gray-50">
+<DialogHeader>
+  <DialogTitle>Contact Me</DialogTitle>
+</DialogHeader>
+<CardContent className="space-y-4">
+  <div className="space-y-2">
+    <Label htmlFor="email">Email</Label>
+    <Input
+      id="email"
+      type="email"
+      placeholder="Email"
+      required
+      className="placeholder-gray-100"
+    />
+  </div>
+  <div className="space-y-2">
+    <Label htmlFor="subject">Subject</Label>
+    <Input id="subject" placeholder="Objet" required />
+  </div>
+  <div className="space-y-2">
+    <Label htmlFor="body">Message</Label>
+    <Textarea
+      id="body"
+      placeholder="Write your message here..."
+      className="min-h-[150px]"
+      required
+    />
+  </div>
+</CardContent>
+<DialogFooter>
+  <Button type="submit">Send</Button>
+</DialogFooter>
+</DialogContent> */
+}
